@@ -1,0 +1,6 @@
+# Submission README - Brief Notes on Implementation
+- LLM usage was minimal - briefly used to amend particularities in translating Javascript knowledge into Typescript framework
+- Interpreted "core" and "peripheral" descriptions to be the ones we want to show under role alignment - if role comes up as an intermediate role, I show description based on whether the category attained a high or low ranking and input description in accordance to that.
+- Used no outside libraries - I pushed myself to use as much React, Typescript, and Tailwind to allow styling
+- Clicking navbar for Core, Intermediate, and Periphery Roles scrolls to the first instant of a role categorized as such within the sorted list - this means clicking Core goes to the highest ranking role, Intermediate goes to 5th, and Periphery goes to third from last.
+- I noticed that there was an inconsistency between the JSON objects provided for roles and user results and the types defined in /lib/types.ts - I changed types.ts to match the JSON file since it is only one area of correction instead of at all ten data objects

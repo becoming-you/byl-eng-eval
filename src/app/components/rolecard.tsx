@@ -15,10 +15,10 @@ export default function RoleCard({rankedRole, selectedIndex, setSelectedIndex} :
     return (
         <button className={selectedIndex === (rankedRole.rank_number) ? "role-button-selected" : "role-button"} onClick={handleClick}>
             <h1 className="text-lg font-semibold text-black">{rankedRole.name}</h1>
-            <div className="space-y-2 text-center sm:text-left">
-                <div className="space-y-0.5 flex flex-row">
-                    <h1 className="text-xl font-semibold font-serif text-black m-2">{rankedRole.rank_number + 1}</h1>
-                    <Image className="inline-block ml-[25%]" src={`/roles/${rankedRole.id}.svg`} alt={`${rankedRole.name} symbol`} width={36} height={36}/>
+            <div className="space-y-1 text-center">
+                <div className="flex flex-row justify-center">
+                    <h1 className="text-xl font-semibold font-serif text-gray-400 m-2">{rankedRole.rank_number + 1}</h1>
+                    <Image className="inline-block ml-[25%]" src={`/roles/${rankedRole.id}.svg`} alt={`${rankedRole.name} symbol`} width={30} height={30}/>
                 </div>
             </div>
         </button>

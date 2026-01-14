@@ -6,8 +6,9 @@ import RoleInfoPage from "../../components/roleinfopage";
 
 
 export default async function Breakdown() {
+  const clientId = "24601";
   const rolesDescribed = getAllRoles();
-  const userInfo = getUserResults("24601");
+  const userInfo = getUserResults(clientId);
   
   interface RolesAndScore {
     id: string
@@ -67,13 +68,13 @@ export default async function Breakdown() {
   }
 
   const mergedData : RankedRole [] = mergeAndSort(rolesDescribed, userInfo);
-  
+  //inline-flex h-12 items-center justify-center rounded-full bg-[#10131a] px-6 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:translate-y-[-2px] hover:bg-black
   return <div className="bg-[#f8f5f0] p-5">
    
     <div>
       <Link 
         href="/discover"
-        className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm  outline-1 outline-[#bebaa0] font-semibold tracking-[0.22em] text-black shadow-lg hover:outline-3">
+        className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm  outline-1 outline-[#bebaa0] font-semibold tracking-[0.22em] text-black shadow-lg transition hover:translate-y-[-2px] hover:bg-slate-200">
         Back to Summary
       </Link>
     </div>

@@ -37,3 +37,54 @@ body {
 .animate-role-loop {
   animation: roleLoop 28s linear infinite;
 }
+
+.scale-markers-container {
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.marker {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.scale-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+.role-button {
+  border: 1px solid black;
+  border-radius: var(--radius-sm);
+  scroll-snap-align: center;
+  margin: calc(var(--spacing) * 2);
+  width: 10%;
+  height: 10%;
+}
+
+.role-button:hover{
+  background-color: lavender;
+  outline: purple 3px solid;
+}
+
+.role-button-selected {
+  border: 1px solid black;
+  border-radius: var(--radius-sm);
+  scroll-snap-align: center;
+  margin: calc(var(--spacing) * 2);
+  width: 20%;
+  height: 20%;
+  background-color: lavender;
+  outline: purple 2px;
+  box-shadow: var(--shadow-lg);
+}
+

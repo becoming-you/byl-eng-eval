@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Navbar from "@/components/navbar";
+
 export default function DiscoverLayout({
   children,
 }: Readonly<{
@@ -5,7 +8,7 @@ export default function DiscoverLayout({
 }>) {
   return (
     <>
-      <nav className="m-10">[Navbar goes in layout.]</nav>
+      <Navbar />
       <main className="m-10">{children}</main>
     </>
   );

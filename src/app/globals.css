@@ -37,3 +37,21 @@ body {
 .animate-role-loop {
   animation: roleLoop 28s linear infinite;
 }
+
+.scale-markers-container {
+  height: 100px;
+  border-radius: 10px;
+  outline: 1px solid rgb(208, 201, 201);
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.marker {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+

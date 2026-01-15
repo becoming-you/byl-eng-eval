@@ -25,11 +25,24 @@ export type Role = {
   role_desc: string;
   core_drive: string;
   most_like_when: string;
-  high_rank_desc: string;
-  low_rank_desc: string;
+  core_rank_desc: string;
+  peripheral_rank_desc: string;
   top_rank_desc: string;
   bottom_rank_desc: string;
 };
+
+export type RankedRole = {
+    id: string
+    name: string
+    role_desc: string
+    core_drive: string
+    most_like_when: string
+    score: number
+    rank: string
+    score_rank: string
+    rank_number: number
+    rank_desc: string
+  }
 
 export type Results = Record<RoleId, number>;
 

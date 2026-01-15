@@ -13,6 +13,7 @@ type NavButton = PropsWithChildren<{
 export default function NavButton({ onClick, children, isActive }: NavButton) {
   return (
     <button
+      type="button"
       className={`cursor-pointer ${NAV_BASE_STYLE} ${
         isActive ? NAV_ACTIVE_STYLE : NAV_INACTIVE_STYLE
       } `}

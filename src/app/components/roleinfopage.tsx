@@ -56,7 +56,7 @@ export default function RoleInfoPage({rankedRolesData} : {
 
         <RoleCards rolecards={rankedRolesData} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
         
-        <div className="m-5 pt-20 text-neutral-800">
+        <div className="m-5 pt-14 text-neutral-800">
             <h2 className="text-6xl/7 font-serif font-medium">Who {" "}
                     <span className="italic font-serif font-medium">is</span> {getIndefArticleAndName(selectedRolePage)}?</h2>
             <p className="mt-10 mb-10 text-lg">{selectedRolePage.role_desc}</p>

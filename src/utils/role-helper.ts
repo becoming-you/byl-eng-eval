@@ -1,4 +1,4 @@
-import { Results, Role } from "@/lib/types";
+import { Role } from "@/lib/types";
 
 export function getRoleScore(role: Role, index: number, totalRoles: number) {
   if (index === 0) return role.top_rank_desc;

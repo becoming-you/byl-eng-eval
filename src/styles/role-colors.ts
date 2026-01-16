@@ -59,4 +59,4 @@ export const ROLE_COLORS = {
     text: "text-slate-800",
     shadow: "shadow-slate-200",
   },
-};
+} as const;

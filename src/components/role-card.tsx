@@ -61,14 +61,12 @@ export default function RoleCard({
         >
           {index + 1}
         </p>
-        <div className="">
-          <Image
-            src={`/roles/${role.id}.svg`}
-            alt={role.name}
-            width={isSelected ? 72 : 48}
-            height={isSelected ? 72 : 48}
-          />
-        </div>
+        <Image
+          src={`/roles/${role.id}.svg`}
+          alt={role.name}
+          width={isSelected ? 72 : 48}
+          height={isSelected ? 72 : 48}
+        />
       </div>
     </div>
   );

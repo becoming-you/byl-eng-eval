@@ -13,7 +13,7 @@ export default async function Breakdown() {
     return <div>No results found</div>;
   }
 
-  const sortedRoles = roles.sort((a, b) => results[b.id] - results[a.id]);
+  const sortedRoles = [...roles].sort((a, b) => results[b.id] - results[a.id]);
 
   return (
     <div>

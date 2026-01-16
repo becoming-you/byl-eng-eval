@@ -1,7 +1,7 @@
 "use client";
 
-import { type PropsWithChildren } from "react";
 import Link from "next/link";
+import { type PropsWithChildren } from "react";
 
 type NavButton = PropsWithChildren<{
   href?: string;

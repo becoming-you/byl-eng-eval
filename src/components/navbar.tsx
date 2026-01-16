@@ -1,22 +1,22 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import NavLink from "@/components/common/nav-link";
+import NavButton from "@/components/common/nav-button";
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
     <nav className="flex gap-x-4 m-10 border-b border-gray-200">
-      <NavLink href="/discover" isActive={pathname === "/discover"}>
+      <NavButton href="/discover" isActive={pathname === "/discover"}>
         Summary
-      </NavLink>
-      <NavLink
+      </NavButton>
+      <NavButton
         href="/discover/breakdown"
         isActive={pathname === "/discover/breakdown"}
       >
         Role Breakdown
-      </NavLink>
+      </NavButton>
     </nav>
   );
 }

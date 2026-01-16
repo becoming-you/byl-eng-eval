@@ -38,11 +38,11 @@ export default function RoleCard({
       ref={cardRef}
       onClick={onClick}
       className={`shrink-0 rounded-xl p-5 pb-2 cursor-pointer 
-        transition-all duration-300 max-h-min 
+        transition-all duration-300 ease-in-out max-h-min 
         ${
           isSelected
             ? `${colors.bg} ${colors.border} ${colors.shadow} border-2 shadow-lg`
-            : "border border-neutral-200 shadow-md opacity-70 hover:opacity-100"
+            : "border-2 border-neutral-100 shadow-md opacity-70 hover:opacity-100"
         }
       `}
     >

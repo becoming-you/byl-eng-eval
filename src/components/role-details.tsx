@@ -21,11 +21,11 @@ export default function RoleDetails({
       <h2 className="font-serif">
         Who <span className="italic">is</span> {anOrA} {role.name}?
       </h2>
-      <p>{role.role_desc}</p>
+      <p className="min-h-18 text-balance text-lg">{role.role_desc}</p>
       <h2 className="font-serif ">You Feel Most Like You When...</h2>
-      <p>{role.most_like_when}</p>
+      <p className="min-h-18 text-balance text-lg">{role.most_like_when}</p>
       <h2>Core Drive</h2>
-      <p>{role.core_drive}</p>
+      <p className="min-h-18 text-balance text-lg">{role.core_drive}</p>
       <AlignmentCard
         role={role}
         roleScore={roleScore}

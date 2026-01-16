@@ -1,25 +1,40 @@
+"use client";
+
 import { type PropsWithChildren } from "react";
-import {
-  NAV_BASE_STYLE,
-  NAV_ACTIVE_STYLE,
-  NAV_INACTIVE_STYLE,
-} from "@/styles/nav-styles";
+import Link from "next/link";
 
 type NavButton = PropsWithChildren<{
-  onClick: () => void;
+  href?: string;
+  onClick?: () => void;
   isActive: boolean;
+  className?: string;
+  isDisabled?: boolean;
 }>;
 
-export default function NavButton({ onClick, children, isActive }: NavButton) {
+export default function NavButton({
+  href,
+  onClick,
+  children,
+  isActive,
+  className,
+  isDisabled,
+}: NavButton) {
+  const Component = href ? Link : ("button" as React.ElementType);
+
+  const baseStyle = "border-b-4 pb-2 transition-all duration-500";
+  const activeStyle = "font-bold border-lime-900";
+  const inactiveStyle = "border-transparent text-gray-500 hover:text-gray-700";
+
   return (
-    <button
-      type="button"
-      className={`cursor-pointer ${NAV_BASE_STYLE} ${
-        isActive ? NAV_ACTIVE_STYLE : NAV_INACTIVE_STYLE
-      } `}
+    <Component
+      {...(href ? { href } : {})}
+      disabled={!href ? isDisabled : undefined}
       onClick={onClick}
+      className={`cursor-pointer ${baseStyle} ${
+        isActive ? activeStyle : inactiveStyle
+      } ${className}`}
     >
       {children}
-    </button>
+    </Component>
   );
 }

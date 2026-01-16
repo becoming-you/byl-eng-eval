@@ -18,7 +18,7 @@ export default function RoleList({ roles, activeRole }: RoleList) {
   };
 
   return (
-    <section className="flex items-center gap-4 px-5 pb-5 mt-14 overflow-x-auto scroll-smooth hide-scrollbar">
+    <section className="flex items-center gap-4 px-5 pb-5 mt-14 overflow-x-auto scroll-smooth hide-scrollbar min-h-[250px]">
       {roles.map((role, index) => (
         <RoleCard
           key={role.id}

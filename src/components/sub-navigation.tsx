@@ -1,6 +1,6 @@
 "use client";
 
-import NavButton from "@/components/nav-button";
+import NavButton from "@/components/common/nav-button";
 import { ROLE_NAV_ITEMS } from "@/constants/navigation";
 
 export default function SubNavigation() {

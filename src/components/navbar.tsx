@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import NavLink from "@/components/nav-link";
+import NavLink from "@/components/common/nav-link";
 
 export default function Navbar() {
   const pathname = usePathname();
